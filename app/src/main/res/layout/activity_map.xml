@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carte de covoiturage"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:background="@color/primaryColor"
+        android:textStyle="bold"
+        android:fontFamily="@font/manrope" />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/addCovoiturageButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Ajouter un covoiturage"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/manrope" />
+
+    <Button
+        android:id="@+id/purchasedButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Mes covoiturages achetés"
+        android:backgroundTint="#4e7397"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/manrope" />
+</LinearLayout>

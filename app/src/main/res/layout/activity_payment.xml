@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paiement sécurisé"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="#0e141b"/>
+
+        <EditText
+            android:id="@+id/editTextCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+        android:hint="Numéro de carte (16 chiffres)"
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#0e141b"
+        android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:id="@+id/editTextCardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+        android:hint="Nom du titulaire"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#0e141b"
+        android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:id="@+id/editTextExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+        android:hint="Date d'expiration (MM/YY)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#0e141b"
+        android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:id="@+id/editTextCVV"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+        android:hint="CVV (3 chiffres)"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginBottom="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#0e141b"
+        android:background="@drawable/edit_text_background"/>
+
+        <Button
+            android:id="@+id/buttonConfirmPayment"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+        android:text="Confirmer le Paiement"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:importantForAccessibility="yes"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    </LinearLayout>
+</ScrollView>

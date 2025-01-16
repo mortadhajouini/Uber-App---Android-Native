@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#F8FAFC"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ajouter covoiturage"
+            android:textColor="#0e141b"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingStart="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#e7edf3"
+        android:layout_marginBottom="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/destinationInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Entrez votre destination"
+            android:padding="12dp"
+            android:textColor="#0e141b"
+            android:importantForAccessibility="yes"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_map_pin"
+            android:layout_marginEnd="8dp"
+            app:tint="#4e7397" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#e7edf3"
+        android:layout_marginBottom="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/departureInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Entrez votre point de départ"
+            android:padding="12dp"
+            android:textColor="#0e141b"
+            android:importantForAccessibility="yes"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_map_pin"
+            android:layout_marginEnd="8dp"
+            app:tint="#4e7397" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#e7edf3"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/dateTimeInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Entrez la date et l'heure du départ"
+            android:inputType="datetime"
+            android:padding="12dp"
+            android:textColor="#0e141b"
+            android:importantForAccessibility="yes"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_clock"
+            android:layout_marginEnd="8dp"
+            app:tint="#4e7397" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#e7edf3"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/priceInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Prix"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#0e141b"
+            android:importantForAccessibility="yes"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_credit_card"
+            android:layout_marginEnd="8dp"
+            app:tint="#4e7397" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Continuer"
+            android:textColor="#ffffff"
+            android:background="#4CAF50"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:importantForAccessibility="yes"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+    </LinearLayout>
+
+</LinearLayout>
